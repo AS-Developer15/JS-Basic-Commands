@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Basics</title>
+  </head>
+  <body>
+    <script>
+      let hi = () => {
+        let x = document.getElementById("as");
+        x.innerText = "Hello";
+      };
+    </script>
+
+    <div id="mainDiv">
+      <h1 id="as">Subjects</h1>
+      <ul>
+        <li class="liVal">Physics</li>
+        <li class="liVal">Maths</li>
+        <li class="liVal">Calcus</li>
+        <li class="liVal">Chemistry</li>
+        <li class="liVal">CS IT</li>
+      </ul>
+      <button onclick="hi()">Add</button>
+    </div>
+  </body>
+</html>
